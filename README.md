@@ -1,2 +1,2 @@
-# -grading-system
+# grading-system
 Система для оценки качества преподователей
