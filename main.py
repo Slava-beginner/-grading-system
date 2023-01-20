@@ -422,7 +422,7 @@ def btn_edit_person():
     newRoot.focus_set()
 
 def save_review():
-    global review
+    global review,current_review
     r = review.get("1.0",END).replace('\n','')
     if r == current_review or current_review == '':
         messagebox.showinfo(message='Нужно внести изменения в отзыв')
