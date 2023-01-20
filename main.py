@@ -499,7 +499,7 @@ def Main():
 
     
     
-    root.title("Система оценки качества преподователей")
+    root.title("Система оценки качества работы преподавателей")
     root.geometry("600x450+300+200")
    
     btn_add = Button(toolbar, text='Добавить отзыв', width=20,command=btn_add_person, bg='yellow',bd=1,compound=TOP)
