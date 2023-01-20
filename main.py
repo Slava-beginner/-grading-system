@@ -432,6 +432,7 @@ def save_review():
             i[i.index(current_review)] = r
     review.config(state=DISABLED)
     db.updateData()
+    current_review = ''
     messagebox.showinfo(message='Новый отзыв сохранён')
 
 def edit_review():
