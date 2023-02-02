@@ -144,7 +144,7 @@ def btn_add_person():
     entry_rating = ttk.Combobox(newRoot, values=[u'1', u'2',u'3',u'4',u'5'])
     entry_rating.current(0)
     entry_rating.place(x=200, y=110,width=40)
-    
+   
     entry_comment  = Text(newRoot)
     entry_comment.place(x=200, y=150,height=55,width=150)
 
@@ -155,7 +155,7 @@ def btn_add_person():
         global familia,entry_rating,entry_comment
         fam = familia.get()
         rat = float(entry_rating.get())
-        comm = entry_comment.get("1.0",END)
+        comm = entry_comment.get("1.0",END).replace('\n','')
         if rat < 1 or rat > 5:
             newRoot.destroy()
             return messagebox.showinfo(message='Неправильно выбрали рейтинг')
